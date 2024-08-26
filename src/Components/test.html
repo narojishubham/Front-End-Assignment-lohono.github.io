@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tfoot {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .pagination {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .pagination a.active {
+            background-color: #007BFF;
+            color: white;
+            border: 1px solid #007BFF;
+        }
+
+        .pagination a:hover {
+            background-color: #ddd;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #666;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Revenue</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Check In</th>
+            <th>Check Out</th>
+            <th>Total Nights</th>
+            <th>Guest Count</th>
+            <th>Booking Amount</th>
+            <th>My Share</th>
+            <th>Booking Date</th>
+            <th>Payout Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>25-Jul-24</td>
+            <td>26-Jul-24</td>
+            <td>1</td>
+            <td>2</td>
+            <td>49,446</td>
+            <td>32,139</td>
+            <td>06-Jul-24</td>
+            <td>2024-07</td>
+        </tr>
+        <!-- Repeat for each row -->
+    </tbody>
+</table>
+
+<div class="pagination">
+    <a href="#">&#171;</a>
+    <a href="#">1</a>
+    <a href="#" class="active">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">&#187;</a>
+</div>
+
+<div class="note">
+    Please Note: The reports are for general information and reference purposes only. 
+    Please refer to the MIS reports shared over email for the final payout details. 
+    For any queries <a href="#">contact us</a>.
+</div>
+
+</body>
+</html>

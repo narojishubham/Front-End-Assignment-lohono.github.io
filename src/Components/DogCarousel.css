@@ -1,0 +1,87 @@
+.carousel-container {
+    position: relative;
+    margin-bottom: 5rem;
+
+  }
+  
+  .carousel-header {
+    text-align: left;
+    padding: 1rem 0;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .carousel-content {
+    display: flex;
+    /* overflow: hidden; */
+    width: 100%;
+    transition: transform 0.5s ease-in-out;    height: 28rem;
+
+  }
+  
+  .carousel-item {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    height: 31rem;
+    margin: 0.5rem;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   border-radius: 0.5rem;
+  }
+  
+  .carousel-item img {
+  
+    width: 100%;
+    height: 17rem;
+    object-fit: inherit;
+    border-radius: 8px;
+  }
+  
+  .carousel-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    position: absolute;
+    right: 2%;
+    top: -2rem;    border: 1px solid;
+    border-radius: 50%;
+    width: 2.2rem;
+
+  }
+  
+  .carousel-button.next {
+    top: -2rem;
+    right: -2%;    border: 1px solid;
+    border-radius: 50%;
+    width: 2.2rem;
+
+    position: absolute;
+  }
+  .spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
